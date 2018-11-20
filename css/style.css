@@ -1,0 +1,466 @@
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe/Circe-Regular.eot');
+	src: local('Circe'), local('Circe-Regular'),
+		url('../fonts/Circe/Circe-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe/Circe-Regular.woff') format('woff'),
+		url('../fonts/Circe/Circe-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe/Circe-Bold.eot');
+	src: local('Circe Bold'), local('Circe-Bold'),
+		url('../fonts/Circe/Circe-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Circe/Circe-Bold.woff') format('woff'),
+		url('../fonts/Circe/Circe-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot');
+	src: local('Playfair Display-Bold Italic'), local('PlayfairDisplay-BoldItalic'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.woff') format('woff'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot');
+	src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.woff') format('woff'),
+		url('../fonts/PlayfairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IntroScriptR H2Base';
+	src: url('../fonts/IntroScriptR H2Base/IntroScriptR-H2Base.otf');
+	src: local('../fonts/IntroScriptR H2Base/IntroScriptR H2Base'), local('IntroScriptR H2Base');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-Light.eot');
+	src: local('Open Sans Light'), local('OpenSans-Light'),
+		url('OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-Light.woff') format('woff'),
+		url('OpenSans-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 74px;
+	font-family: "Myriad Pro", "Arial", "Helvetica", sans-serif;
+	color: #2d2829;
+	background-color: #fbebea;
+	box-sizing: border-box;
+}
+
+/*==============Oбщие стили по классу=================*/
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+.hand-written {
+	font-family: "IntroScriptR H2Base", "Comic Sans" sans-serif;
+	font-size: 40.83px;
+	line-height: 77,95px;
+	font-size: normal;
+	color: #32313d;
+}
+
+.button {
+	display: inline-block;
+	padding: 17px 67px;
+	font-size: 13px;
+	line-height: 26.73px;
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	background-color: #f50049;
+	border-radius: 22px;
+}
+
+.button:hover {
+  box-shadow: 0px 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+}
+
+.section-header {
+	margin: 0;
+	font-size: 40px;
+	line-height: 68.96px;
+	font-size: normal;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*==============Отдельные стили=================*/
+
+.main-header {
+	display: flex;
+	align-items: baseline;
+	padding: 55px 0;
+	padding-bottom: 15px;
+}
+
+.header-logo {
+	margin: 0;
+	margin-bottom: ;
+	margin-right: 46px;
+	font-family: "PlayfairDisplay", "Times New Roman", Times, serif;
+	font-size: 23.24px;
+	line-height: 32.69px;
+	font-weight: bold;
+}
+
+.header-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.header-list__item {
+	margin-right: 45px;
+}
+
+.header-list__item:last-child {
+	margin-right: 0;
+}
+
+.header-list__link {
+	font-family: "Circe", "Arial", "Helvetica", sans-serif;
+	font-size: 13px;
+	line-height: 32.06px;
+	font-weight: normal;
+	color: #2d2829;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.header-list__link:hover {
+	color: #f50049;
+}
+
+.phone_number {
+	margin-left: auto;
+	font-size: 15px;
+	line-height: 39.53px;
+	color: #2d2829;
+	text-decoration: none;
+}
+
+.main {
+	padding-top: 135px;
+	padding-bottom: 250px;
+}
+
+.main__header {
+	margin: 0;
+	margin-bottom: 25px;
+	font-size: 78.31px;
+	line-height: 70px;
+	font-size: normal;
+}
+
+.main__text {
+	margin: 0;
+	margin-bottom: 55px;
+}
+
+.main__link {
+	margin-bottom: 130px;
+}
+
+.main__info-container {
+	display: flex;
+	width: 560px;
+}
+
+.main__info-text {
+	margin: 0;
+	margin-right: 70px;
+	padding-top: 15px;
+  padding-bottom: 10px;
+	padding-left: 70px;
+	font-family: "Circe", "Arial", "Helvetica", sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: normal;
+	color: #000;
+	background-repeat: no-repeat;
+	background-position: center left;
+}
+
+.leaf-bg {
+  background-image: url(../img/leaf-bg.png);
+}
+
+.box-bg {
+  background-image: url(../img/box-bg.png);
+}
+
+.cakes {
+
+}
+
+.cakes__header {
+  margin-bottom: 60px;
+}
+
+.cakes__list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.cakes__item {
+	padding: 35px 50px;
+  padding-right: 70px;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: center;
+	box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
+}
+
+.cakes__item:hover {
+	box-shadow: 0px 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+}
+
+.classic {
+  background-image: url(../img/classic.jpg);
+}
+
+.mousses {
+  background-image: url(../img/mousses.jpg);
+}
+
+.wedding {
+  background-image: url(../img/wedding.jpg);
+}
+
+.for-men {
+  background-image: url(../img/for-men.jpg);
+}
+
+.for-women {
+  background-image: url(../img/for-women.jpg);
+}
+
+.for-children {
+  background-image: url(../img/for-children.jpg);
+}
+
+.cakes__header {
+	margin: 0;
+	font-size: 24px;
+	line-height: 73.7px;
+}
+
+.cakes__text {
+	margin: 0;
+	font-size: 20px;
+	line-height: 73.7px;
+}
+
+.cakes__link {
+	font-size: 20px;
+	line-height: 73.7px;
+	color: #2d2829;
+	text-decoration: none;
+}
+
+.cakes__link-icon {
+	width: 17px;
+	height: 12px;
+	fill: #1e201d;
+}
+
+.cakes__link:hover > .cakes__link-icon {
+  fill: #f95f8d;
+}
+
+.order-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.order-list__item {
+	margin-bottom: 35px;
+	padding: 70px 80px;
+  background-color: #fff;
+	box-shadow: 0px 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
+}
+
+.order-list__header {
+	width: 175px;
+	margin: 0;
+	font-size: 27px;
+	line-height: 29.96px;
+	color: #f50049;
+} 
+
+.order-list__header-number {
+	margin: 0;
+	font-size: 58.33px;
+	line-height: 153.9px;
+	color: #f50049;
+}
+
+.fillers-item {
+	display: flex;
+}
+
+.fillers-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.fillers-list__item {
+	display: flex;
+	align-items: center;
+}
+
+.fillers-list-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.fillers-list__header {
+	margin: 0;
+	font-size: 20px;
+	line-height: 64.55px;
+	color: #2f2f2f;
+}
+
+.fillers-list__text {
+	margin: 0;
+	font-size: 18px;
+	line-height: 24px;
+	color: #2f2f2f;
+}
+
+.fillers-list__cost {
+	margin: 0;
+	font-size: 22px;
+	line-height: 59.17px;
+	color: #2f2f2f;
+}
+
+.fillers-list__link {
+	margin-right: auto;
+}
+
+.fillers-list__number {
+	margin: 0;
+	font-size: 18px;
+	line-height: 25.62px;
+	color: #838383;
+}
+
+.size-item { 
+}
+
+.size-list {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.size-list__item {
+
+}
+
+.image-size-container {
+  position: relative;
+}
+
+.size-list__image {
+
+}
+
+.size-list__value {
+	position: absolute;
+	bottom: 40%;
+	left: 43%;
+	margin: 0;
+	font-size: 17.01px;
+	line-height: 44.6px;
+}
+
+.size-list__text {
+	margin: 0;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.decor-item {
+
+}
+
+.order-list__header {
+	margin: 0;
+}
+
+.decor-list {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.decor-list__item {
+  box-shadow: 0px 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);	
+}
+
+.decor-list__item:hover {
+	box-shadow: 0px 6px 9.7px 0.3px rgba(0, 0, 0, 0.14);
+}
+
+.decor-list__image {
+
+}
+
+.decor-list__text {
+	margin: 0;
+	font-size: 20px;
+	line-height: 30px;
+	color: #2f2f2f;
+}
+
+.decor-cost {
+	font-family: "Playfair Display";
+	font-size: 22px;
+	line-height: 30px;
+	font-size: bold;
+	color: #2f2f2f;
+}
